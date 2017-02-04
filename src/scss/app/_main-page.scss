@@ -1,0 +1,123 @@
+.main-offers {
+  margin-bottom: 42px;
+
+  &__big-offer {
+    padding-right:8px;
+  }
+
+  &__small_offers {
+    padding-left:1px;
+
+    .offer {
+      margin-top: 9px;
+
+      &:first-child {
+        margin-top:0;
+      }
+      &:last-child {
+        margin-top:10px;
+      }
+    }
+  }
+}
+
+.custom-search-params {
+  &__header {
+    margin: {
+      top: 8px;
+      bottom:28px;
+    }
+
+    &-floor {
+      margin-bottom: 14px;
+    }
+  }
+
+  &__description {
+    &-textarea {
+      resize: none;
+    }
+  }
+
+  &__house-type {
+    padding-left:60px;
+  }
+
+  &__size-floor {
+    padding: {
+      left: 50px;
+      right: 65px;
+    }
+
+    .form-group {
+      margin-bottom: 12px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .control-label {
+        padding-right: 0;
+        text-align: left;
+      }
+    }
+
+  }
+
+  &__additional {
+    &-title {
+      margin-top: 25px;
+    }
+  }
+}
+
+.yet-offers {
+  margin-top: 55px;
+  background-color: $block-above-footer-bg-color;
+
+  &__header {
+    margin: {
+      top: 38px;
+      bottom: 26px;
+    }
+    font: {
+      size: 17px;
+      weight: bold;
+    }
+  }
+
+  &__buttons {
+    margin: {
+      top: 50px;
+      bottom: 51px;
+    }
+
+    &-load {
+      font: {
+        weight: bold;
+      }
+      padding: {
+        left: 1px;
+        right: 1px;
+      }
+      .slicon-refresh {
+        @include flip();
+      }
+    }
+  }
+
+  &__offers {
+    margin: {
+      left:-3px;
+      right:-3px;
+    }
+
+    .col {
+      padding: {
+        left: 3px;
+        right: 3px;
+      }
+      margin-bottom:5px;
+    }
+  }
+}

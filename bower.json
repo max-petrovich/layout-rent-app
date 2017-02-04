@@ -1,0 +1,25 @@
+{
+  "name": "rent.app",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Maxim <unrelaxby@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "awesome-bootstrap-checkbox": "^0.3.7",
+    "bootstrap-select": "^1.10.0",
+    "simple-line-icons": "^2.3.2"
+  },
+  "devDependencies": {
+    "font-awesome-sass": "^4.6.2"
+  }
+}

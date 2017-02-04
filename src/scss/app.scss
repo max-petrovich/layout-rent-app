@@ -1,0 +1,12 @@
+@import "variables";
+@import "css3/css3-mixins";
+// ------------------------
+
+@import "app/template";
+@import "app/main-page";
+@import "app/search-page";
+@import "app/offer";
+@import "app/additional";
+
+// ------------------------
+@import "app/adaptive";

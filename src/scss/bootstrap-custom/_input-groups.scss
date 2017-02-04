@@ -1,0 +1,19 @@
+.input-group {
+  span {
+    background-color: $input-bg;
+  }
+  input{
+    border-right-style:none;
+  }
+
+  .form-control:focus + .input-group-addon {
+    border-color:$form-element-outline-color;
+
+
+  }
+  .input-group-addon {
+    .glyphicon {
+      color: $primary-color;
+    }
+  }
+}

@@ -1,0 +1,263 @@
+html {
+  font-size:100%;
+  position: relative;
+  min-height: 100%;
+}
+body {
+  color: $primary-color;
+  font: {
+    size: $primary-font-size;
+    family: $primary-font;
+  }
+  margin-bottom: $footer-height;
+  background: $primary-bg-color;
+  line-height:1;
+}
+
+a {
+  color:$primary-color;
+
+  &:hover {
+    color: lighten( $primary-color, 10% );
+  }
+
+  &:active {
+    color: darken( $primary-color, 10% );
+    text-decoration: none;
+  }
+
+  &.white {
+    color: $second-color;
+
+    &:hover {
+      color: darken( $second-color, 10% );
+    }
+  }
+
+
+}
+h1, h2, h3, h4, h5, h6 {
+  font: {
+    weight: bold;
+  }
+}
+h5 {
+  font-size: 17px;
+}
+
+hr {
+  margin: {
+    top: 20px;
+    bottom:20px;
+  }
+}
+
+.header {
+  margin-top:31px;
+  position: relative;
+  height:40px;
+
+  &__contacts {
+    margin-top:16px;
+    padding: {
+      left:0;
+      right:0;
+    }
+
+  }
+
+  &__menu {
+    margin-top:16px;
+    font: {
+      weight: bold;
+    }
+    white-space: nowrap;
+
+    ul li {
+      margin-left:45px;
+      &:first-child {
+        margin:0;
+      }
+    }
+  }
+
+  &__my-profile {
+    margin-top:3px;
+    padding-left:5px;
+
+    &-link {
+
+      padding-left:12px;
+
+      .slicon {
+        position: relative;
+        top:-2px;
+      }
+
+      .online-indicator {
+        position: absolute;
+        top:11px;
+        right:12px;
+      }
+
+      &-user {
+        color: $primary-color;
+        font-size:14px;
+
+        &-bg {
+          position: absolute;
+          top:4px;
+          left:11px;
+          width: 25px;
+          height: 25px;
+          background-color: #f6f6f6;
+          @include border-radius(50%);
+        }
+      }
+    }
+  }
+}
+
+.navigation {
+
+  margin-bottom:23px;
+  &__nav {
+    line-height:36px;
+
+    &-list {
+      margin: {
+        left:-27px;
+        bottom:0;
+      }
+
+      li {
+        padding-left: 27px;
+        padding-right: 0;
+      }
+    }
+  }
+
+  &__search-input {
+    padding-left:5px;
+  }
+}
+
+
+.form-search-offer {
+  margin: {
+    bottom: 28px;
+  }
+
+  &__offer {
+    &-price {
+      font: {
+        weight: bold;
+      }
+      line-height: 47px;
+      padding-right:0;
+
+      &-setup {
+        padding-left:0;
+        line-height: 47px;
+        color: $input-color-placeholder;
+        font-size: 17px;
+
+        .btn-link {
+          font: {
+            family: $primary-font;
+            size: 21px;
+          }
+
+          padding: {
+            left:2px;
+            right:2px;
+            top:0;
+            bottom:0;
+          }
+        }
+
+        > .text {
+          position: relative;
+          top:3px;
+        }
+
+        .flat-dropdown-menu li a{
+          font-size: 21px;
+          padding: {
+            top: 7px;
+            bottom: 7px;
+          }
+        }
+      }
+    }
+
+    &-input {
+      height: 47px;
+      font-size:17px;
+      border-color:$primary-color;
+
+      &-from {
+        padding-right:8px;
+      }
+      &-to {
+        padding: {
+          left:0;
+          right:12px;
+        }
+      }
+    }
+  }
+
+  &__text-count-room span{
+    display: block;
+    font: {
+      style: italic;
+      size: 14px;
+    }
+    margin: {
+      left:-14px;
+      top:20px;
+      bottom: 12px;
+    }
+
+    &:before, &:after {
+      content: '';
+      display: inline-block;
+      margin: {
+        bottom:2px;
+        left:14px;
+        right:14px;
+      }
+      width:25px;
+      border-bottom:1px solid;
+    }
+  }
+
+  &__submit {
+    padding-left:26px;
+  }
+}
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: $footer-height;
+  background-color: $primary-bg-color;
+  padding-top:45px;
+
+  &__nav {
+    line-height: 24px;
+  }
+
+  &__info {
+    margin-top:33px;
+
+    &-copyright {
+      font-size:14px;
+      line-height: 16px;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.list-inline--vertical-divider {
+  li {
+    padding: 0;
+    &:after {
+      content: '|';
+      margin:0 7px;
+    }
+    &:last-child:after {
+      content: '';
+      margin:0;
+    }
+  }
+}
+
+.online-indicator {
+  width: 9px;
+  height: 9px;
+  background-color: #444;
+  @include border-radius(50%);
+}
+.online-indicator--green {
+  background: #14d905;
+}
+.online-indicator--red {
+  background: #ff0000;
+}
+
+// awesome-font-checkbox
+.checkbox {
+  position: relative;
+  input {
+    cursor: pointer;
+  }
+  label {
+    &:before {
+      width: 19px;
+      height: 19px;
+    }
+    &:after {
+      top:2px;
+      left:0;
+    }
+  }
+}

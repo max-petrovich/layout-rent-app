@@ -1,0 +1,29 @@
+@media (min-width: 1200px) {
+  /* Search page, LEFT SIDE BAR and METRO SCHEMA */
+  .custom-search-params {
+    &__left-sidebar {
+      padding: {
+        right: 0;
+      }
+      width: 22%;
+
+      &-filter {
+        > .btn-group-justified {
+          .btn {
+            padding: {
+              left: 0;
+              right: 0;
+            }
+          }
+        }
+      }
+    }
+    &__metro-schema {
+      padding: {
+        left: 12px;
+        right: 0;
+      }
+      width: 78%;
+    }
+  }
+}
